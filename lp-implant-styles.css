@@ -182,47 +182,7 @@ textarea {
   -webkit-appearance: none;
 }
 
-/* ---------------- Animations  ---------------- */
-.animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes slideIn {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideIn {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-/* ---------------- Global Styles  ---------------- */
-*, *::before, *::after {
+*, ::before, ::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -256,19 +216,7 @@ img {
   display: none !important;
 }
 
-.no-scroll-map iframe {
-  pointer-events: none;
-  display: block;
-  width: 100%;
-}
-
-.no-scroll-map.active iframe {
-  pointer-events: auto;
-}
-
-a, *::before, *::after, img, figure, article, li, #fixed-tabs, #header, #banner,
-h1, h2, h3, h4, h5, h6, .btn, .btn-alt, .btn:before, .btn-alt:before,
-#cycle-2 .cycle-slide-active span {
+a, ::before, ::after, img, figure, article, li, #fixed-tabs, #header, #banner, h1, h2, h3, h4, h5, h6, .btn, .btn-alt, .btn:before, .btn-alt:before {
   -webkit-transition: all .2s;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -278,15 +226,7 @@ i {
   display: inline;
 }
 
-.fix-nav header {
-  z-index: 100;
-}
-
-#fixed-tabs {
-  z-index: 99;
-}
-
-*, *::before, *::after {
+*, ::before, ::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -328,6 +268,46 @@ footer {
   z-index: 100;
 }
 
+/* ---------------- Animations  ---------------- */
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* ---------------- Global Styles  ---------------- */
 .flex-ed, .col-flex-ed {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,10 +351,10 @@ star:after {
   width: 100%;
   text-align: center;
   line-height: 1;
-  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 99;
 }
 
 #fixed-tabs a {
@@ -384,16 +364,16 @@ star:after {
   text-transform: uppercase;
   padding: 14px 0;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #fixed-tabs a:nth-of-type(odd) {
-  background-color: #7b1300;
+  background-color: #520d00;
 }
 
 #fixed-tabs a:nth-of-type(even) {
-  background-color: #000;
+  background-color: #003e60;
 }
 
 @media (min-width: 1031px) {
@@ -551,7 +531,7 @@ header {
           animation-fill-mode: both;
   -webkit-animation-name: slideIn;
           animation-name: slideIn;
-  z-index: 10000;
+  z-index: 100;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
 }
@@ -1049,15 +1029,15 @@ h3 {
   color: #000;
 }
 
-::-moz-placeholder {
-  color: #000;
-}
-
 :-ms-input-placeholder {
   color: #000;
 }
 
-:-moz-placeholder {
+::-ms-input-placeholder {
+  color: #000;
+}
+
+::placeholder {
   color: #000;
 }
 
@@ -1090,7 +1070,7 @@ h3 {
 #landing-page-form h1 {
   font-size: 50px;
   margin-bottom: 30px;
-  color: #333;
+  color: #005889;
   text-align: center;
   padding-top: 20px;
   font-weight: 400;
