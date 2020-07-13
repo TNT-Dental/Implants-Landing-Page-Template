@@ -293,15 +293,14 @@ hr {
     h1 span { margin: 10px;}
     #banner h1 small {font-size: 28px;}
     #banner article {min-width: 300px;}
-    #banner article div {line-height: 1.1;}
+    #banner article div {line-height: 1.1;font-size: 26px; padding-top: 10px;}
     #banner figure {margin-left: 0px;}
-    #banner article div {font-size: 26px; padding-top: 10px;}
     #covid {margin-top: -10px;}
     h2 { margin-top: 20px; font-size: 30px; }
     .split article {padding: 0;}
     .split figure {padding: 0 10px;}
     .split article p {text-align: center; padding: 0 10px;}
-	.copy {padding: 10px 10px 25px; }
+	.copy {padding: 40px 10px 25px; }
     .copy span:first-of-type {display: block; visibility: hidden; font-size: 5px;}
     #map {display: none;}
     footer #contact {padding: 20px 10px;}
