@@ -369,11 +369,11 @@ star:after {
 }
 
 #fixed-tabs a:nth-of-type(odd) {
-  background-color: #520d00;
+  background-color: #e49c0b;
 }
 
 #fixed-tabs a:nth-of-type(even) {
-  background-color: #003e60;
+  background-color: #765a23;
 }
 
 @media (min-width: 1031px) {
@@ -405,54 +405,54 @@ body {
   position: relative;
   background: #fff url(assets/images/lp-implant-bkgrd-texture.jpg);
   text-align: center;
-  color: #000;
-  font: 400 18px/26px "Barlow", sans-serif;
+  color: #282728;
+  font: 400 18px/26px "Heebo", sans-serif;
 }
 
 p {
-  color: #000;
-  font: 400 18px/26px "Barlow", sans-serif;
+  color: #282728;
+  font: 400 18px/26px "Heebo", sans-serif;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  color: #7b1300;
+  color: #f6bb46;
 }
 
 a:hover {
-  color: #005889;
+  color: #96722c;
 }
 
 h1, h2 h3, h4, h5, h6 {
-  font-family: "Barlow", sans-serif;
+  font-family: "Heebo", sans-serif;
   text-align: center;
 }
 
 h1 {
   margin: 0;
-  color: #000;
-  font: 400 35px/1.3 "Barlow", sans-serif;
+  color: #fff;
+  font: 400 35px/1.3 "Heebo", sans-serif;
   letter-spacing: -.8px;
 }
 
 h1 span {
-  font: 700 60px/1 "Barlow", sans-serif;
-  color: #005889;
+  font: 700 60px/1 "Heebo", sans-serif;
+  color: #cac9d0;
   display: block;
 }
 
 h2 {
-  font: 700 40px/1.1 "Barlow", sans-serif;
-  color: #005889;
+  font: 700 40px/1.1 "Heebo", sans-serif;
+  color: #7d7d7d;
   letter-spacing: -0.8px;
   margin: 10px 0;
 }
 
 h3 {
-  font: 700 26px/1 "Barlow", sans-serif;
-  color: #005889;
+  font: 700 26px/1 "Heebo", sans-serif;
+  color: #282728;
   margin: 0 auto 20px;
   letter-spacing: 0;
 }
@@ -479,7 +479,7 @@ main ul li:before {
   position: absolute;
   left: 0;
   top: 0;
-  color: #7b1300;
+  color: #f6bb46;
 }
 
 /*  --------------  Buttons ----------------- */
@@ -488,14 +488,14 @@ main ul li:before {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  padding: 5px 20px;
+  padding: 10px 20px 5px;
   text-align: center;
-  color: #fff;
+  color: #000;
   -webkit-box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
           box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
   border-radius: 4px;
-  background-color: #7b1300;
-  font: 700 31px/1.1 "Barlow", sans-serif;
+  background-color: #f6bb46;
+  font: 700 31px/1.1 "Heebo", sans-serif;
   text-transform: uppercase;
 }
 
@@ -508,7 +508,7 @@ main ul li:before {
 
 .btn:hover,
 .btn-alt:hover {
-  background-color: #005889;
+  background-color: #96722c;
   color: #fff;
 }
 
@@ -536,26 +536,30 @@ header {
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
 }
 
-.fix-nav header address a {
+.fix-nav header .logo img {
+  max-height: 70px;
+}
+
+address a {
   color: #000;
-  font-size: 17px;
+  font-size: 18px;
   margin: 0 7px;
   letter-spacing: -0.18px;
 }
 
-.fix-nav header address a:hover {
-  color: #7b1300;
+address a:hover {
+  color: #f6bb46;
 }
 
 .phone {
-  color: #7b1300;
-  font: 700 34px/30px "Barlow", sans-serif;
+  color: #f6bb46;
+  font: 700 32px/30px "Heebo", sans-serif;
 }
 
 .phone span {
   color: #000;
   display: block;
-  font: 700 24px/24px "Barlow", sans-serif;
+  font: 700 14px/24px "Heebo", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.8px;
   display: block;
@@ -563,7 +567,7 @@ header {
 }
 
 .phone:hover {
-  color: #005889;
+  color: #96722c;
 }
 
 #nav {
@@ -610,8 +614,8 @@ header {
   margin: 10px;
   padding: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 490px;
-          flex: 0 1 490px;
+      -ms-flex: 0 1 510px;
+          flex: 0 1 510px;
 }
 
 .split article p {
@@ -649,13 +653,13 @@ header {
   background: url(assets/images/lp-implant-banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1140px;
-  overflow: hidden;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  max-width: 1250px;
 }
 
 #banner .flex-ed {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  overflow: hidden;
 }
 
 #banner h1 {
@@ -663,56 +667,53 @@ header {
   line-height: 1.15;
 }
 
+#banner h1 small {
+  font-size: 35px;
+  display: block;
+  margin-top: 15px;
+  letter-spacing: -1px;
+}
+
+#banner figure {
+  display: none;
+}
+
 #banner article {
   padding: 40px 10px 20px;
   margin-left: 20px;
   z-index: 1;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 550px;
-          flex: 0 1 550px;
+  -ms-flex: 0 1 610px;
+  flex: 0 1 610px;
 }
 
-#banner article > div {
-  background-color: rgba(0, 0, 0, 0.7);
-  font: 300 34px/41px "Barlow", sans-serif;
+#banner article div {
+  background-color: #3d3e3e;
+  font: 700 26px/41px 'Heebo', sans-serif;
   color: #fff;
   text-align: center;
-  border-top: 5px solid #364351;
-  border-bottom: 5px solid #364351;
+  text-transform: uppercase;
+  border-top: 5px solid #ad8433;
+  border-bottom: 5px solid #ad8433;
+  max-width: 540px;
+  margin: auto;
+  padding: 5px 0;
 }
 
-#banner article > div span {
-  text-transform: uppercase;
+#banner article div span {
   display: block;
-  color: #fff;
-  font-size: 22px;
+  color: #f6bb46;
+  text-transform: none;
   line-height: 1.1;
-  margin: 5px auto 10px;
+  margin: 0 auto 10px;
   letter-spacing: 1.3px;
 }
 
-#banner figure {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin: 0 -20px;
-}
-
-#covid {
-  background-color: #f1da58;
-  display: block;
-  color: #000;
+#banner p {
+  font-size: 14px;
+  color: #fff;
   font-weight: 700;
-  font-size: 20px;
-  max-width: 1140px;
-  margin: -25px auto 20px;
-  position: relative;
-  z-index: 2;
-  padding: 10px 5px;
-}
-
-#covid span {
-  margin: 0 10px;
-  display: inline-block;
+  line-height: 1.2;
 }
 
 /* ---------------- Callouts Styles  ---------------- */
@@ -753,7 +754,7 @@ header {
 }
 
 .callouts .col:hover h3 {
-  color: #004592;
+  color: #96722c;
 }
 
 .callouts .portrait {
@@ -784,7 +785,7 @@ header {
   width: 95%;
   height: 95%;
   position: absolute;
-  border: 2px solid #005889;
+  border: 2px solid #96722c;
   border-radius: 10px;
   z-index: 3;
   margin: auto;
@@ -818,9 +819,17 @@ header {
   background-color: transparent;
 }
 
+#choice {
+  margin-bottom: 0;
+}
+
 #secondary {
-  background-color: #d8dac3;
-  margin: 10px auto;
+  background-color: #f0f0f0;
+  margin: 0 auto 10px;
+}
+
+#secondary .callouts {
+  margin-top: 0;
 }
 
 #secondary a {
@@ -847,7 +856,7 @@ header {
 #secondary .callouts .icon-location {
   top: -5px;
   font-size: 30px;
-  color: #005889;
+  color: #282728;
 }
 
 /* -------------- Team ----------------- */
@@ -855,23 +864,32 @@ header {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 510px;
           flex: 0 1 510px;
-}
-
-#team figure a:hover {
-  color: #005889;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  flex: 0 1 510px;
 }
 
 #team .caption {
-  font: 700 18px/28px "Barlow", sans-serif;
+  font: 500 18px/28px "Heebo", sans-serif;
   color: #000;
   padding: 5px;
   margin: 10px auto;
 }
 
+#team .caption:hover {
+  color: #96722c;
+}
+
 /* ---------------- Contact --------------- */
 footer {
   padding-top: 30px;
-  background-color: #d8dac3;
+  background-color: #ebeceb;
 }
 
 footer .flex-ed {
@@ -899,7 +917,7 @@ footer article {
 
 footer .phone {
   font-size: 28px;
-  color: #7b1300;
+  color: #f6bb46;
   margin: 10px auto;
   font-weight: 700;
   display: block;
@@ -907,7 +925,7 @@ footer .phone {
 }
 
 footer .phone:hover {
-  color: #005889;
+  color: #96722c;
 }
 
 footer .address {
@@ -917,7 +935,12 @@ footer .address {
 }
 
 footer .address:hover {
-  color: #7b1300;
+  color: #96722c;
+}
+
+footer h3 {
+  margin-top: 10px;
+  color: #868686;
 }
 
 #services, #footer-form {
@@ -929,10 +952,6 @@ footer .address:hover {
       -ms-flex: 0 1 370px;
           flex: 0 1 370px;
   padding: 30px 10px 20px;
-}
-
-h3 {
-  margin-top: 10px;
 }
 
 #map {
@@ -964,16 +983,17 @@ h3 {
   text-align: center;
   -webkit-box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
           box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
+  border: 2px solid #96722c;
   border-radius: 2px;
-  background-color: #7b1300;
+  background-color: #f6bb46;
 }
 
 #services li a {
   display: block;
   font-size: 20px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
-  font-family: "Barlow", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 21px;
   letter-spacing: 1px;
   padding: 18px 20px 15px;
@@ -984,7 +1004,7 @@ h3 {
 }
 
 #services li:hover a {
-  color: #005889;
+  color: #96722c;
 }
 
 .simple {
@@ -1010,54 +1030,54 @@ h3 {
 .simple input, .simple textarea {
   outline: none;
   border: none;
-  -webkit-box-shadow: inset 0 3px 0 #7b1300;
-          box-shadow: inset 0 3px 0 #7b1300;
-  background-color: #f8f8f8;
+  -webkit-box-shadow: inset 0 3px 0 #f6bb46;
+          box-shadow: inset 0 3px 0 #f6bb46;
+  background-color: #ededed;
   margin: 3px 0;
   width: 90%;
   padding: 3px 10px;
   font-size: 14px;
-  color: #000;
+  color: #282728;
 }
 
 .simple input:focus, .simple textarea:focus, .simple .btn:focus {
   background-color: #f7f4f4;
-  -webkit-box-shadow: inset 0 3px 0 #005889;
-          box-shadow: inset 0 3px 0 #005889;
+  -webkit-box-shadow: inset 0 3px 0 #96722c;
+          box-shadow: inset 0 3px 0 #96722c;
 }
 
 ::-webkit-input-placeholder {
-  color: #000;
+  color: #282728;
 }
 
 :-ms-input-placeholder {
-  color: #000;
+  color: #282728;
 }
 
 ::-ms-input-placeholder {
-  color: #000;
+  color: #282728;
 }
 
 ::placeholder {
-  color: #000;
+  color: #282728;
 }
 
 .copy {
   font: 400 12px/1.4 Arial, sans-serif;
-  color: #656565;
-  background-color: #d2d4bc;
+  color: #282728;
+  background-color: #dedede;
   margin-top: 20px;
   text-align: center;
-  padding: 20px 0 30px;
+  padding: 30px 0 30px;
 }
 
 .copy a {
   margin: auto;
-  color: #656565;
+  color: #282728;
 }
 
 .copy a:hover {
-  color: #7b1300;
+  color: #96722c;
 }
 
 /* ---------------- New Patient Form ---------------- */
@@ -1071,7 +1091,7 @@ h3 {
 #landing-page-form h1 {
   font-size: 50px;
   margin-bottom: 30px;
-  color: #005889;
+  color: #96722c;
   text-align: center;
   padding-top: 20px;
   font-weight: 400;
@@ -1125,8 +1145,10 @@ hr {
   h1 span {
     font-size: 60px;
   }
-  #covid span {
-    margin: 0;
+  #banner article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
   }
 }
 
@@ -1135,7 +1157,7 @@ hr {
     font-size: 15px;
   }
   .phone {
-    font-size: 25px;
+    font-size: 30px;
   }
   h1 {
     font-size: 44px;
@@ -1175,23 +1197,30 @@ hr {
   header address {
     display: none;
   }
+  #banner {
+    background: none;
+    background-color: #2b2b2b;
+  }
   #banner h1 {
     font-size: 52px;
   }
   #banner article {
-    padding: 20px 10px 0;
-    margin: 10px auto 20px;
+    min-width: 450px;
+    padding: 40px 10px 10px;
   }
   #banner .flex-ed {
     display: block;
   }
-  #banner figure {
-    display: block;
-    margin: 0 -100px;
+  #banner article {
+    margin: 10px auto 20px;
+    padding-top: 20px;
   }
   #banner article div {
     max-width: 500px;
     margin: 10px auto 15px;
+  }
+  #banner figure {
+    display: block;
   }
   .split {
     margin: 20px auto;
@@ -1199,6 +1228,7 @@ hr {
   }
   .split article {
     max-width: 100%;
+    padding: 20px 10px;
   }
   .split article .btn {
     float: none;
@@ -1220,6 +1250,12 @@ hr {
     margin: auto;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  #choice figure {
+    margin-bottom: 0;
+  }
+  #secondary {
+    padding: 15px 0;
   }
   footer .flex-ed {
     -ms-flex-wrap: wrap;
@@ -1283,6 +1319,7 @@ hr {
     font-size: 42px;
   }
   h1 span {
+    font-size: 42px;
     margin: 10px;
   }
   #banner h1 small {
@@ -1291,23 +1328,15 @@ hr {
   #banner article {
     min-width: 300px;
   }
+  #banner article .btn {
+    font-size: 28px;
+  }
   #banner article div {
     line-height: 1.1;
-    font-size: 26px;
-    padding-top: 10px;
-  }
-  #banner figure {
-    margin-left: 0px;
-  }
-  #covid {
-    margin-top: -10px;
   }
   h2 {
     margin-top: 20px;
     font-size: 30px;
-  }
-  .split article {
-    padding: 0;
   }
   .split figure {
     padding: 0 10px;
@@ -1343,8 +1372,8 @@ hr {
     font-size: 32px;
   }
   #banner article div {
-    font-size: 20px;
     font-size: 24px;
+    padding-top: 10px;
   }
   #banner article div span strong {
     font-size: 20px;
@@ -1358,6 +1387,9 @@ hr {
   }
   .callouts {
     padding-bottom: 10px;
+  }
+  #team figure {
+    display: table;
   }
   #services h3 {
     margin-top: 10px;
@@ -1389,7 +1421,7 @@ hr {
     font-size: 20px;
   }
   #banner article div {
-    font-size: 20px;
+    font-size: 16px;
   }
   #banner article div span {
     font-size: 18px;
