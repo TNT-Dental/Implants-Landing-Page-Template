@@ -327,20 +327,21 @@ footer {
 }
 
 star {
-  line-height: 1.5;
+  line-height: 1;
   margin: 7px auto;
   display: block;
 }
 
 star:after {
-  font-size: 26px;
+  font-size: 22px;
   font-family: 'fontello';
   font-weight: 400;
   margin: 0;
   font-style: normal;
   content: '\e80f \e80f \e80f \e80f \e80f';
-  color: #fcd800;
+  color: #f0b756;
   padding: 0 10px;
+  letter-spacing: 8.8px;
 }
 
 /* -------  Fixed Tabs ------------ */
@@ -354,7 +355,7 @@ star:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 99;
+  z-index: 150;
 }
 
 #fixed-tabs a {
@@ -369,11 +370,11 @@ star:after {
 }
 
 #fixed-tabs a:nth-of-type(odd) {
-  background-color: #e49c0b;
+  background-color: #e59814;
 }
 
 #fixed-tabs a:nth-of-type(even) {
-  background-color: #765a23;
+  background-color: #13273f;
 }
 
 @media (min-width: 1031px) {
@@ -403,58 +404,60 @@ star:after {
 /* ---------------- page foundation ---------- */
 body {
   position: relative;
-  background: #fff url(assets/images/lp-implant-bkgrd-texture.jpg);
+  background-color: #fff;
   text-align: center;
-  color: #282728;
-  font: 400 18px/26px "Heebo", sans-serif;
+  color: #231f20;
+  font: 400 18px/26px "Fira Sans", sans-serif;
 }
 
 p {
-  color: #282728;
-  font: 400 18px/26px "Heebo", sans-serif;
+  color: #231f20;
+  font: 400 18px/26px "Fira Sans", sans-serif;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  color: #f6bb46;
+  color: #f0b756;
 }
 
 a:hover {
-  color: #96722c;
+  color: #1c3b5e;
 }
 
 h1, h2 h3, h4, h5, h6 {
-  font-family: "Heebo", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   text-align: center;
 }
 
 h1 {
   margin: 0;
-  color: #fff;
-  font: 400 35px/1.3 "Heebo", sans-serif;
-  letter-spacing: -.8px;
+  color: #ccc;
+  font: 400 44px/1.3 "Fira Sans", sans-serif;
+  letter-spacing: 1.1px;
 }
 
 h1 span {
-  font: 700 60px/1 "Heebo", sans-serif;
-  color: #cac9d0;
+  font: 700 84px/1.2 "Fira Sans Condensed", sans-serif;
+  color: #fff;
   display: block;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: normal;
 }
 
 h2 {
-  font: 700 40px/1.1 "Heebo", sans-serif;
-  color: #7d7d7d;
-  letter-spacing: -0.8px;
+  font: 700 62px/1.1 "Fira Sans Condensed", sans-serif;
+  color: #1c3b5e;
+  letter-spacing: normal;
   margin: 10px 0;
 }
 
 h3 {
-  font: 700 26px/1 "Heebo", sans-serif;
-  color: #282728;
-  margin: 0 auto 20px;
-  letter-spacing: 0;
+  font: 600 30px/1 "Fira Sans Condensed", sans-serif;
+  color: #f0b756;
+  margin: 20px auto 0;
+  letter-spacing: 0.15px;
 }
 
 main ul {
@@ -479,7 +482,7 @@ main ul li:before {
   position: absolute;
   left: 0;
   top: 0;
-  color: #f6bb46;
+  color: #f0b756;
 }
 
 /*  --------------  Buttons ----------------- */
@@ -488,15 +491,14 @@ main ul li:before {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  padding: 10px 20px 5px;
+  padding: 12px 15px;
+  min-width: 310px;
   text-align: center;
-  color: #000;
-  -webkit-box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
-          box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
-  border-radius: 4px;
-  background-color: #f6bb46;
-  font: 700 31px/1.1 "Heebo", sans-serif;
+  color: #fff;
+  background-color: #f0b756;
+  font: 700 18px/1.1 "Fira Sans Condensed", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
 
 .btn span,
@@ -508,7 +510,7 @@ main ul li:before {
 
 .btn:hover,
 .btn-alt:hover {
-  background-color: #96722c;
+  background-color: #1c3b5e;
   color: #fff;
 }
 
@@ -516,7 +518,8 @@ header {
   position: relative;
   padding: 0;
   z-index: 100;
-  background-image: url(assets/images/lp-implant-bkgrd-texture.jpg);
+  background-color: #fff;
+  padding-bottom: 80px;
 }
 
 .fix-nav header {
@@ -531,9 +534,10 @@ header {
           animation-fill-mode: both;
   -webkit-animation-name: slideIn;
           animation-name: slideIn;
-  z-index: 100;
+  z-index: 110;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
           box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+  padding-bottom: 10px;
 }
 
 .fix-nav header .logo img {
@@ -544,37 +548,39 @@ address a {
   color: #000;
   font-size: 18px;
   margin: 0 7px;
-  letter-spacing: -0.18px;
+  line-height: 1.39;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 address a:hover {
-  color: #f6bb46;
+  color: #f0b756;
 }
 
 .phone {
-  color: #f6bb46;
-  font: 700 32px/30px "Heebo", sans-serif;
+  color: #f0b756;
+  font: 700 35px/30px "Fira Sans Condensed", sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .phone span {
   color: #000;
   display: block;
-  font: 700 14px/24px "Heebo", sans-serif;
+  font: 500 18px/24px "Fira Sans Condensed", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.9px;
   display: block;
   margin-bottom: 5px;
 }
 
 .phone:hover {
-  color: #96722c;
+  color: #254B77;
 }
 
 #nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1190px;
+  max-width: 1260px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -586,14 +592,24 @@ address a:hover {
 }
 
 #nav .btn {
-  font-size: 33px;
-  padding: 5px 15px;
+  color: #fff;
+  font-size: 29px;
+  padding: 11px 15px;
   margin: 0;
+  letter-spacing: .1em;
+  min-width: 195px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
 }
 
 #nav .btn span {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
+  letter-spacing: 0.75px;
+}
+
+#nav .btn:hover {
+  color: #f0b756;
 }
 
 /* ------------   Split Img ------------- */
@@ -601,37 +617,42 @@ address a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 1100px;
-  margin: 50px auto;
+  max-width: 1160px;
+  margin: 100px auto;
 }
 
 .split article {
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 510px;
-          flex: 0 1 510px;
+      -ms-flex: 0 1 520px;
+          flex: 0 1 520px;
+  text-align: center;
 }
 
 .split article p {
-  text-align: justify;
-  text-align-last: center;
-  letter-spacing: -0.18px;
+  letter-spacing: normal;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 
 .split .btn {
-  margin: 10px auto;
+  margin: 10px auto 30px;
 }
 
 .split figure img {
   position: relative;
-  -webkit-box-shadow: 3px 4px 7px rgba(60, 60, 60, 0.35);
-          box-shadow: 3px 4px 7px rgba(60, 60, 60, 0.35);
+}
+
+.split figure figcaption {
+  margin-top: 20px;
+  font-weight: 700;
 }
 
 .split .no-shad img {
@@ -665,21 +686,64 @@ address a:hover {
 #banner h1 {
   margin-bottom: 30px;
   line-height: 1.15;
+  font-size: 40px;
+  color: #ccc;
+  letter-spacing: 1.13px;
 }
 
 #banner h1 small {
-  font-size: 35px;
+  font-size: 32px;
   display: block;
   margin-top: 15px;
-  letter-spacing: -1px;
+  letter-spacing: 0.8px;
 }
 
-#banner figure {
+#banner figure figcaption {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+  margin-top: 5px;
+  padding: 10px 15px;
+  width: 450px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  right: 100px;
+  color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#banner figure figcaption a {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  font-family: "Fira Sans Condensed", sans-serif;
+  line-height: 20px;
+}
+
+#banner figure figcaption a small {
+  display: block;
+  text-transform: none;
+}
+
+#banner figure figcaption a:hover {
+  color: #f0b756;
+}
+
+#banner figure img {
   display: none;
 }
 
 #banner article {
-  padding: 40px 10px 20px;
+  padding: 50px 10px 40px;
   margin-left: 20px;
   z-index: 1;
   -webkit-box-flex: 0;
@@ -688,25 +752,35 @@ address a:hover {
 }
 
 #banner article div {
-  background-color: #3d3e3e;
-  font: 700 26px/41px 'Heebo', sans-serif;
+  background-color: #231f20;
+  font: 400 20px/41px "Fira Sans", sans-serif;
+  letter-spacing: 1.2px;
   color: #fff;
   text-align: center;
-  text-transform: uppercase;
-  border-top: 5px solid #ad8433;
-  border-bottom: 5px solid #ad8433;
-  max-width: 540px;
+  border-top: 5px solid rgba(240, 183, 86, 0.35);
+  border-bottom: 5px solid rgba(240, 183, 86, 0.35);
+  max-width: 585px;
   margin: auto;
   padding: 5px 0;
+  letter-spacing: 2.5px;
 }
 
 #banner article div span {
   display: block;
-  color: #f6bb46;
   text-transform: none;
-  line-height: 1.1;
-  margin: 0 auto 10px;
-  letter-spacing: 1.3px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  margin: 0 auto 0;
+  font-size: 46px;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  color: #96e7ff;
+}
+
+#banner article div small {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: normal;
 }
 
 #banner p {
@@ -714,6 +788,25 @@ address a:hover {
   color: #fff;
   font-weight: 700;
   line-height: 1.2;
+}
+
+#banner-wrapper {
+  position: relative;
+  margin-top: -60px;
+  z-index: 101;
+}
+
+#banner-wrapper:before {
+  background-color: #254B77;
+  background: -webkit-gradient(linear, left top, left bottom, from(#254b77), to(#163250));
+  background: linear-gradient(#254b77 0%, #163250 100%);
+  position: absolute;
+  left: 0;
+  top: 60px;
+  right: 0;
+  content: "";
+  z-index: -2;
+  bottom: -300px;
 }
 
 /* ---------------- Callouts Styles  ---------------- */
@@ -731,6 +824,8 @@ address a:hover {
   height: auto;
   padding: 10px 0;
   width: 100%;
+  margin-top: 80px;
+  z-index: 102;
 }
 
 .callouts .col {
@@ -753,8 +848,14 @@ address a:hover {
   padding: 5px;
 }
 
+.callouts .col h3 {
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #88c6ff;
+}
+
 .callouts .col:hover h3 {
-  color: #96722c;
+  color: #1c3b5e;
 }
 
 .callouts .portrait {
@@ -785,7 +886,7 @@ address a:hover {
   width: 95%;
   height: 95%;
   position: absolute;
-  border: 2px solid #96722c;
+  border: 2px solid white;
   border-radius: 10px;
   z-index: 3;
   margin: auto;
@@ -796,7 +897,7 @@ address a:hover {
 }
 
 .callouts .portrait:hover:after {
-  border-color: #fff;
+  border-color: #1c3b5e;
 }
 
 .callouts .portrait img {
@@ -805,7 +906,14 @@ address a:hover {
 }
 
 .callouts p {
-  line-height: 1.1;
+  line-height: 1.2;
+  margin-top: 15px;
+  letter-spacing: 0.45px;
+}
+
+#options {
+  margin-top: 50px;
+  max-width: 1180px;
 }
 
 #options div {
@@ -817,15 +925,56 @@ address a:hover {
 
 #options .col {
   background-color: transparent;
+  z-index: 105;
+}
+
+#options .col h3 {
+  font-size: 34px;
+  color: #f0b756;
+  letter-spacing: normal;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+#options .col .portrait {
+  -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#options .col .portrait:after {
+  color: white;
+}
+
+#options .col:last-of-type h3 {
+  margin: 0 -20px 25px;
+}
+
+#choice figcaption {
+  margin-top: 10px;
+  letter-spacing: 2.2px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 #choice {
   margin-bottom: 0;
 }
 
+#choice figure {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
 #secondary {
-  background-color: #f0f0f0;
+  background-color: #082d5e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#254b77), to(#163250));
+  background: linear-gradient(#254b77 0%, #163250 100%);
   margin: 0 auto 10px;
+  padding: 50px 20px 40px;
 }
 
 #secondary .callouts {
@@ -834,62 +983,89 @@ address a:hover {
 
 #secondary a {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 235px;
-          flex: 0 0 235px;
+      -ms-flex: 0 0 255px;
+          flex: 0 0 255px;
 }
 
 #secondary a h3 {
-  letter-spacing: 0.26px;
-  line-height: 1.2;
+  letter-spacing: -.02em;
+  line-height: 1.3;
   margin: 0 auto;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 26px;
 }
 
 #secondary .callouts .portrait {
-  min-height: 225px;
+  min-height: 260px;
 }
 
 #secondary .callouts .portrait:after {
   width: 92%;
   height: 92%;
+  border: 2px solid #f0b756;
 }
 
-#secondary .callouts .icon-location {
+#secondary .callouts .portrait:hover:after {
+  border-color: #1c3b5e;
+}
+
+#secondary .callouts .icon-map-marker {
   top: -5px;
   font-size: 30px;
-  color: #282728;
+  color: #f0b756;
 }
 
 /* -------------- Team ----------------- */
 #team figure {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 510px;
-          flex: 0 1 510px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  flex: 0 1 510px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 575px;
+          flex: 0 1 575px;
+  margin-left: 50px;
+  position: relative;
 }
 
-#team .caption {
-  font: 500 18px/28px "Heebo", sans-serif;
-  color: #000;
-  padding: 5px;
-  margin: 10px auto;
+#team figure div {
+  margin: 5px;
 }
 
-#team .caption:hover {
-  color: #96722c;
+#team figcaption {
+  margin-top: 10px;
+}
+
+#team figcaption a {
+  color: #2b2b2b;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+}
+
+#team figcaption a:hover {
+  color: #f0b756;
+}
+
+#team article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 500px;
+          flex: 0 1 500px;
 }
 
 /* ---------------- Contact --------------- */
 footer {
-  padding-top: 30px;
-  background-color: #ebeceb;
+  padding-top: 70px;
+  background-color: #1c3b5e;
+  background-color: #254B77;
 }
 
 footer .flex-ed {
@@ -908,50 +1084,66 @@ footer article {
   text-align: center;
   margin: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 300px;
-          flex: 0 1 300px;
+      -ms-flex: 0 1 340px;
+          flex: 0 1 340px;
   padding: 10px;
   -webkit-box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
           box-shadow: 1px 3px 7px 0px rgba(0, 0, 0, 0.35);
 }
 
 footer .phone {
-  font-size: 28px;
-  color: #f6bb46;
+  font-size: 40px;
+  color: #f0b756;
   margin: 10px auto;
-  font-weight: 700;
+  font-weight: 500;
   display: block;
   letter-spacing: 0.28px;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 footer .phone:hover {
-  color: #96722c;
+  color: #1c3b5e;
 }
 
 footer .address {
   color: #000;
   font-size: 17px;
-  line-height: 1.1;
+  line-height: 1.7;
+  margin-top: 20px;
 }
 
 footer .address:hover {
-  color: #96722c;
+  color: #f0b756;
 }
 
 footer h3 {
-  margin-top: 10px;
-  color: #868686;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1c3b5e;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 #services, #footer-form {
-  min-height: 370px;
+  min-height: 450px;
+}
+
+#services h3, #footer-form h3 {
+  font-size: 30px;
 }
 
 #contact {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 370px;
-          flex: 0 1 370px;
+      -ms-flex: 0 1 430px;
+          flex: 0 1 430px;
   padding: 30px 10px 20px;
+}
+
+#contact h3 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 #map {
@@ -972,39 +1164,36 @@ footer h3 {
 }
 
 #services ul {
-  margin-top: 30px;
+  margin-top: 20px;
   padding-left: 0;
   margin-bottom: 10px;
 }
 
 #services li {
-  margin: 3px auto;
+  margin: 10px auto;
   list-style: none;
   text-align: center;
-  -webkit-box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
-          box-shadow: 0 3px 7px rgba(24, 23, 24, 0.35);
-  border: 2px solid #96722c;
-  border-radius: 2px;
-  background-color: #f6bb46;
+  border: 1px solid #f0b756;
+  background-color: #f0b756;
 }
 
 #services li a {
   display: block;
-  font-size: 20px;
   color: #000;
   font-weight: 700;
-  font-family: "Heebo", sans-serif;
-  font-size: 21px;
-  letter-spacing: 1px;
-  padding: 18px 20px 15px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  padding: 28px 30px 25px;
 }
 
 #services li:hover {
-  background-color: #fff;
+  background-color: #1c3b5e;
 }
 
 #services li:hover a {
-  color: #96722c;
+  color: white;
 }
 
 .simple {
@@ -1012,14 +1201,22 @@ footer h3 {
 }
 
 .simple .btn {
-  width: 140px;
+  width: 90%;
   font-size: 14px;
   font-weight: 700;
-  padding: 10px;
+  padding: 15px 10px;
+  min-width: auto;
+  background-color: #f0b756;
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
 }
 
-.simple input {
-  height: 36px;
+.simple .btn:hover {
+  background-color: #1c3b5e;
+}
+
+.simple input, .simple select {
+  height: 38px;
 }
 
 .simple textarea {
@@ -1027,57 +1224,58 @@ footer h3 {
   padding-top: 8px;
 }
 
-.simple input, .simple textarea {
+.simple input, .simple textarea, .simple select {
   outline: none;
   border: none;
-  -webkit-box-shadow: inset 0 3px 0 #f6bb46;
-          box-shadow: inset 0 3px 0 #f6bb46;
   background-color: #ededed;
   margin: 3px 0;
   width: 90%;
-  padding: 3px 10px;
-  font-size: 14px;
-  color: #282728;
+  padding: 6px 10px;
+  font-size: 18px;
+  color: #231f20;
 }
 
-.simple input:focus, .simple textarea:focus, .simple .btn:focus {
+.simple input:focus, .simple textarea:focus, .simple .btn:focus, .simple select:focus {
   background-color: #f7f4f4;
-  -webkit-box-shadow: inset 0 3px 0 #96722c;
-          box-shadow: inset 0 3px 0 #96722c;
+  -webkit-box-shadow: inset 0 3px 0 #1c3b5e;
+          box-shadow: inset 0 3px 0 #1c3b5e;
 }
 
 ::-webkit-input-placeholder {
-  color: #282728;
+  color: #231f20;
 }
 
 :-ms-input-placeholder {
-  color: #282728;
+  color: #231f20;
 }
 
 ::-ms-input-placeholder {
-  color: #282728;
+  color: #231f20;
 }
 
 ::placeholder {
-  color: #282728;
+  color: #231f20;
 }
 
 .copy {
-  font: 400 12px/1.4 Arial, sans-serif;
-  color: #282728;
-  background-color: #dedede;
+  font: 400 18px/1.4 "Fira Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
   margin-top: 20px;
   text-align: center;
-  padding: 30px 0 30px;
+  padding: 10px 0 60px;
+}
+
+.copy span {
+  padding: 0 5px;
 }
 
 .copy a {
   margin: auto;
-  color: #282728;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .copy a:hover {
-  color: #96722c;
+  color: #f0b756;
 }
 
 /* ---------------- New Patient Form ---------------- */
@@ -1091,7 +1289,7 @@ footer h3 {
 #landing-page-form h1 {
   font-size: 50px;
   margin-bottom: 30px;
-  color: #96722c;
+  color: #1c3b5e;
   text-align: center;
   padding-top: 20px;
   font-weight: 400;
@@ -1115,14 +1313,17 @@ footer h3 {
   display: none;
 }
 
-#landing-page-form .simple input {
+#landing-page-form .simple input, #landing-page-form .simple select {
   height: 50px;
 }
 
 #landing-page-form .simple textarea {
   height: 200px;
-  margin-bottom: 30px;
   padding-top: 10px;
+}
+
+#landing-page-form .simple .hear {
+  margin-bottom: 30px;
 }
 
 #landing-page-form .btn {
@@ -1138,6 +1339,14 @@ hr {
 }
 
 /* ---------------- Media Queries ---------------- */
+@media (max-width: 1160px) {
+  #options {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1050px;
+  }
+}
+
 @media (max-width: 1110px) {
   h1 {
     font-size: 50px;
@@ -1152,7 +1361,7 @@ hr {
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1040px) {
   header address a {
     font-size: 15px;
   }
@@ -1167,6 +1376,11 @@ hr {
   }
   .callouts h3 {
     font-size: 25px;
+  }
+  #secondary a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 230px;
+            flex: 0 0 230px;
   }
 }
 
@@ -1257,6 +1471,11 @@ hr {
   #secondary {
     padding: 15px 0;
   }
+  #secondary a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 255px;
+            flex: 0 0 255px;
+  }
   footer .flex-ed {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1277,6 +1496,13 @@ hr {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  #team figure {
+    max-width: 575px;
+    margin: auto;
+  }
+  #banner figure img {
+    display: block;
   }
 }
 
@@ -1307,6 +1533,12 @@ hr {
   .callouts a h3 {
     margin-bottom: 15px;
     line-height: 1.2;
+  }
+  #banner-wrapper {
+    margin-top: 0;
+  }
+  header {
+    padding-bottom: 0;
   }
 }
 
@@ -1365,6 +1597,34 @@ hr {
   #landing-page-form h1 {
     font-size: 40px;
   }
+  .btn {
+    min-width: auto;
+  }
+  .btn {
+    max-width: 100%;
+  }
+  #banner figure figcaption {
+    width: 100%;
+    position: relative;
+    right: auto;
+    margin-top: 0;
+  }
+  #banner figure figcaption a {
+    font-size: 11px;
+  }
+  #team figcaption a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #team figure {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1404,6 +1664,12 @@ hr {
     display: block;
     font-size: 5px;
     visibility: hidden;
+  }
+  #banner figure figcaption {
+    display: block;
+  }
+  #banner figure figcaption a {
+    margin: 10px auto;
   }
 }
 
